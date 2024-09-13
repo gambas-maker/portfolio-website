@@ -1,0 +1,71 @@
+body{
+    background-color: #222831;
+    color: white;
+    font-family: "SUSE", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+
+nav{
+    padding: 20px 50px;
+    background-color: black;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+}
+
+.picture{
+    height: 40px;
+    width: 40px;
+    border: 2px solid #FFD369;
+    border-radius: 22px;
+    margin-right: 20px;
+}
+
+.about-me-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.landing{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.cards-container{
+    justify-content: center;
+}
+
+.card{
+    border: 2px solid red;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+li{
+    padding-inline: 20px;
+}

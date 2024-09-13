@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="{{url_for('static', filename='app.js')}}"></script>
+    <meta charset="UTF-8">
+    <title>Clement's Portfolio</title>
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+<nav>
+    <div class="profile">
+        <div class="picture"></div>
+        <div>
+            <p>Clement Guibaud</p>
+        </div>
+    </div>
+    <ul>
+        <li>About me</li>
+        <li>Projects</li>
+        <li>Contact</li>
+        <li>Day/Night</li>
+    </ul>
+</nav>
+<div class="landing">
+    <h1>Hey, I'm Clement</h1>
+    <h2>I build products and run projects</h2>
+    <button>About me</button>
+</div>
+<div class="container">
+    <h2>About me</h2>
+    <div class="about-me-container">
+        <div class="card">
+            <p>Get to know me!</p>
+            <p>Double background between business and tech. I have a master degree in Digital Marketing and certified
+            Ruby on Rails and Python developer. I love tech topics</p>
+
+        </div>
+        <div class="card">
+            <p>My toolkit</p>
+            <p>Python</p>
+            <p>Django</p>
+            <p>Flask</p>
+            <p>Ruby</p>
+            <p>Rails</p>
+            <p>SQL</p>
+            <p>CSS</p>
+            <p>HTML</p>
+            <p>Javascript</p>
+        </div>
+    </div>
+    <h2>Projects</h2>
+
+    <div class="cards-container">
+        <div class="card">
+            <p>Tic Tac Toe</p>
+            <p>Python Scripting</p>
+            <p>Icon Python</p>
+        </div>
+        <div class="card">
+            <p>Time management tool</p>
+            <p>Framework: Django</p>
+            <p>Icon Django</p>
+        </div>
+        <div class="card">
+            <p>Malicious email app</p>
+            <p>Framework: Django</p>
+            <p>Icon Django</p>
+        </div>
+        <div class="card">
+            <p>HTTP Requests and APIs</p>
+            <p>Framework: Flask</p>
+            <p>Icon Flask</p>
+        </div>
+        <h2>Contact me</h2>
+        # add to some validation when successfully sent
+        <form action="" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="name" required><br>
+             <label for="message">Message:</label><br>
+            <textarea id="message" name="message" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <footer>
+        <p>Clement Guibaud</p>
+        <p>Design inspired by myself</p>
+        <p>Social media links</p>
+    </footer>
+</div>
+</body>
+</html>
