@@ -7,7 +7,7 @@ body{
 }
 
 nav{
-    padding: 20px 50px;
+    /*padding: 20px 50px;*/
     background-color: black;
     position: fixed;
     display: flex;
@@ -58,7 +58,7 @@ nav{
     border: 2px solid red;
 }
 
-ul{
+.list{
     display: flex;
     flex-direction: row;
     list-style-type: none;
