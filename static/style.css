@@ -7,7 +7,7 @@ body{
 }
 
 nav{
-    /*padding: 20px 50px;*/
+    padding: 10px 50px 0px 50px;
     background-color: black;
     position: fixed;
     display: flex;
@@ -34,8 +34,18 @@ nav{
 .about-me-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 }
+
+.cards-container{
+    justify-content: left;
+}
+
+.card{
+    width: 50%;
+    border: 2px solid red;
+}
+
 
 .landing{
     height: 100vh;
@@ -50,39 +60,46 @@ nav{
     text-align: center;
 }
 
-.cards-container{
-    justify-content: center;
-}
 
-.card{
-    border: 2px solid red;
+.tabs{
+    display: flex;
+    flex-direction: row;
 }
 
 .tab{
-    display: flex;
-    flex-direction: column;
     list-style-type: none;
     justify-content: space-between;
+    margin-right: 50px;
     background: black;
     transition: background 0.3s ease;
 }
 
+.mode_switch{
+    display: flex;
+    flex-direction: row;
+    border-radius: 35px;
+    width: 70px;
+    justify-content:center;
+    height: 35px;
+    border: solid 2px white;
+    transition: border-color 0.3s ease;
+}
+
+.mode_switch:hover{
+    border-color: #ffbd1d;
+}
+
 .tab:hover{
     background: linear-gradient(to bottom,
-                                black 80%, /* First color for the bottom 20% */
-                                #ffbd1d 20%);
+                                black 90%, /* First color for the bottom 20% */
+                                #ffbd1d 10%);
 }
 
-/*.test{
-    background-color: transparent;
-    height: 10px;
-    transition: height 0.3s ease, background-color 0.3s ease;
+.day{
+    background: transparent;
+    align-content: center;
+    font-size: 16px;
 }
-
-.test:hover{
-    height: 5px;
-    background-color: #ffbd1d;
-}*/
 
 li{
     padding-inline: 20px;
@@ -102,7 +119,6 @@ button{
 }
 
 button:hover{
-
     background-color: #ffbd1d;
 }
 
