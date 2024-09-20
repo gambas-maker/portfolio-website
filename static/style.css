@@ -58,12 +58,31 @@ nav{
     border: 2px solid red;
 }
 
-.list{
+.tab{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     list-style-type: none;
     justify-content: space-between;
+    background: black;
+    transition: background 0.3s ease;
 }
+
+.tab:hover{
+    background: linear-gradient(to bottom,
+                                black 80%, /* First color for the bottom 20% */
+                                #ffbd1d 20%);
+}
+
+/*.test{
+    background-color: transparent;
+    height: 10px;
+    transition: height 0.3s ease, background-color 0.3s ease;
+}
+
+.test:hover{
+    height: 5px;
+    background-color: #ffbd1d;
+}*/
 
 li{
     padding-inline: 20px;
@@ -83,6 +102,7 @@ button{
 }
 
 button:hover{
+
     background-color: #ffbd1d;
 }
 
