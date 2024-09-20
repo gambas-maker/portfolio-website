@@ -8,7 +8,7 @@ body{
 
 nav{
     padding: 10px 50px 0px 50px;
-    background-color: black;
+    background-color: #181C14;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -48,6 +48,7 @@ nav{
 
 
 .landing{
+    background-image: url("/static/images/andrew-kliatskyi-unsplash.jpg");
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -74,6 +75,13 @@ nav{
     transition: background 0.3s ease;
 }
 
+.tab:hover{
+    background: linear-gradient(to bottom,
+                                black 90%, /* First color for the bottom 20% */
+                                #ffbd1d 10%);
+    color: #ffbd1d;
+}
+
 .mode_switch{
     display: flex;
     flex-direction: row;
@@ -89,11 +97,6 @@ nav{
     border-color: #ffbd1d;
 }
 
-.tab:hover{
-    background: linear-gradient(to bottom,
-                                black 90%, /* First color for the bottom 20% */
-                                #ffbd1d 10%);
-}
 
 .day{
     background: transparent;
