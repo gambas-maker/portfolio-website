@@ -1,14 +1,29 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
 body{
     background-color: #222831;
     color: white;
     font-family: "SUSE", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
+    margin: 0px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h2 {
+    margin-top: 80px;
 }
 
 nav{
     padding: 10px 50px 0px 50px;
-    background-color: #181C14;
+    background: #222831;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -16,6 +31,7 @@ nav{
     left: 0;
     right: 0;
     top: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5)
 }
 
 .profile{
@@ -71,13 +87,12 @@ nav{
     list-style-type: none;
     justify-content: space-between;
     margin-right: 50px;
-    background: black;
     transition: background 0.3s ease;
 }
 
 .tab:hover{
     background: linear-gradient(to bottom,
-                                black 90%, /* First color for the bottom 20% */
+                                #222831 90%, /* First color for the bottom 20% */
                                 #ffbd1d 10%);
     color: #ffbd1d;
 }
@@ -97,11 +112,19 @@ nav{
     border-color: #ffbd1d;
 }
 
+.icons{
+    height: 20px;
+}
 
 .day{
     background: transparent;
     align-content: center;
     font-size: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 3px;
+    gap: 8px;
 }
 
 li{
