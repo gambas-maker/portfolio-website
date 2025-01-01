@@ -30,7 +30,8 @@ def landing_page():
 
 @app.route('/webhook', methods=["GET", "POST"])
 def webhook():
-    return render_template("")
+    return  "Here is my webhook endpoint"
+
 
 if __name__ == "__main__":
     app.run(debug=True)
